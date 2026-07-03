@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syllabus Snap — Photograph your syllabus. Never miss a due date.</title>
+  <meta name="description" content="Snap a photo of any syllabus or assignment sheet and every due date lands in your calendar with reminders. Built by a student, for students." />
+  <meta property="og:title" content="Syllabus Snap" />
+  <meta property="og:description" content="Photograph your syllabus. Never miss a due date." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top">
+      <span class="wordmark-flash" aria-hidden="true"></span>
+      Syllabus&nbsp;Snap
+    </a>
+    <a class="header-cta" href="#waitlist">Join the waitlist</a>
+  </header>
+
+  <main id="top">
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow">Built by a student, for students</p>
+        <h1 id="hero-heading">
+          Photograph your syllabus.<br />
+          <em>Never</em> miss a due date.
+        </h1>
+        <p class="hero-sub">
+          Snap a photo of any syllabus or assignment sheet. Syllabus Snap reads it,
+          finds every deadline, and drops them into your calendar with reminders —
+          in about ten seconds.
+        </p>
+
+        <form class="waitlist-form" aria-label="Join the waitlist">
+          <label class="visually-hidden" for="hero-email">Email address</label>
+          <input id="hero-email" type="email" name="email" required
+                 placeholder="you@school.email" autocomplete="email" />
+          <button type="submit">Get early access</button>
+        </form>
+        <p class="form-note" data-form-note>Free while in beta. No spam — one email when it launches.</p>
+      </div>
+
+      <div class="hero-visual" role="img"
+           aria-label="Illustration of a syllabus being photographed, with due dates flying into a calendar">
+        <div class="paper" aria-hidden="true">
+          <div class="paper-title">HIST 11 — Course Syllabus</div>
+          <div class="paper-line w-90"></div>
+          <div class="paper-line w-75"></div>
+          <div class="paper-row"><span class="paper-line w-40"></span><span class="date-hit d1">Sep 12</span></div>
+          <div class="paper-line w-85"></div>
+          <div class="paper-row"><span class="paper-line w-50"></span><span class="date-hit d2">Sep 18</span></div>
+          <div class="paper-line w-70"></div>
+          <div class="paper-line w-80"></div>
+          <div class="paper-row"><span class="paper-line w-35"></span><span class="date-hit d3">Sep 25</span></div>
+          <div class="paper-line w-60"></div>
+          <div class="scan-beam"></div>
+        </div>
+
+        <ul class="cal-chips" aria-hidden="true">
+          <li class="chip c1"><span class="chip-date">SEP 12</span> Essay draft due</li>
+          <li class="chip c2"><span class="chip-date">SEP 18</span> Chapter 3 quiz</li>
+          <li class="chip c3"><span class="chip-date">SEP 25</span> Lab report</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="steps" aria-labelledby="steps-heading">
+      <h2 id="steps-heading">Three steps. Ten seconds.</h2>
+      <ol class="steps-list">
+        <li class="step reveal">
+          <span class="step-num">1</span>
+          <h3>Snap</h3>
+          <p>Take a photo of the syllabus, assignment sheet, or even the whiteboard. Crumpled, tilted, bad lighting — all fine.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">2</span>
+          <h3>Check</h3>
+          <p>AI pulls out every assignment, quiz, and test date. You see the list and fix anything it got wrong before it saves.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">3</span>
+          <h3>Synced</h3>
+          <p>Everything lands in your Google or Apple calendar with reminders before each deadline. Done for the whole semester.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="why" aria-labelledby="why-heading">
+      <div class="why-inner reveal">
+        <h2 id="why-heading">The first week of school, you get a stack of paper. Somewhere in it is every grade you'll lose.</h2>
+        <p>
+          Every semester starts the same way: six classes, six syllabi, dozens of dates —
+          and you're supposed to copy them all into your calendar by hand. Most people don't.
+          Then week nine arrives and a lab report you forgot existed is due tomorrow.
+        </p>
+        <p>
+          Syllabus Snap exists so that never happens again. One photo per class,
+          and your whole semester is mapped before the first bell.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta" id="waitlist" aria-labelledby="cta-heading">
+      <div class="cta-inner reveal">
+        <h2 id="cta-heading">Be first in line for launch</h2>
+        <p>Launching for back-to-school. Early users get it free.</p>
+        <form class="waitlist-form" aria-label="Join the waitlist">
+          <label class="visually-hidden" for="cta-email">Email address</label>
+          <input id="cta-email" type="email" name="email" required
+                 placeholder="you@school.email" autocomplete="email" />
+          <button type="submit">Join the waitlist</button>
+        </form>
+        <p class="form-note" data-form-note>One email at launch. That's it.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Made by a high school student who was tired of missing due dates.</p>
+    <p class="footer-fine">© 2026 Syllabus Snap</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
